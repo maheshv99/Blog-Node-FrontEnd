@@ -10,17 +10,17 @@ export default function Bollywood() {
   const [TopPost, setTopPost] = useState("");
 
   useEffect(() => {
-    fetch("https://blog-node-backend-g41v.vercel.app/bollywoodPost")
+    fetch("https://blog-node-backend-7wochun1i-maheshv99.vercel.app/bollywoodPost")
       .then((res) => res.json()).then((json) => setPost(json));
   }, []);
 
   useEffect(() => {
-    fetch("https://blog-node-backend-g41v.vercel.app/bollywoodFirstPost")
+    fetch("https://blog-node-backend-7wochun1i-maheshv99.vercel.app/bollywoodFirstPost")
       .then((res) => res.json()).then((json) => setFirstPost(json));
   }, []);
 
   useEffect(() => {
-    fetch("https://blog-node-backend-g41v.vercel.app/bollywoodTopPost")
+    fetch("https://blog-node-backend-7wochun1i-maheshv99.vercel.app/bollywoodTopPost")
       .then((res) => res.json()).then((json) => setTopPost(json));
   }, []);
   return (

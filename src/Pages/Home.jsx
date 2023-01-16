@@ -12,22 +12,22 @@ export default function Home() {
   const [lgImg, setlgImg] = useState("");
 
   useEffect(() => {
-    fetch("https://blog-node-backend-g41v.vercel.app/latest")
+    fetch("https://blog-node-backend-7wochun1i-maheshv99.vercel.app/latest")
     .then((res) => res.json()).then((json) => setLatest(json));
   }, []);
 
   useEffect(() => {
-    fetch("https://blog-node-backend-g41v.vercel.app/latestArticle")
+    fetch("https://blog-node-backend-7wochun1i-maheshv99.vercel.app/latestArticle")
     .then((res) => res.json()).then((json) => setLatestArticle(json));
   }, []);
 
   useEffect(() => {
-    fetch("https://blog-node-backend-g41v.vercel.app/smText")
+    fetch("https://blog-node-backend-7wochun1i-maheshv99.vercel.app/smText")
     .then((res) => res.json()).then((json) => setsmImg(json));
   }, []);
 
   useEffect(() => {
-    fetch("https://blog-node-backend-g41v.vercel.app/lgText")
+    fetch("https://blog-node-backend-7wochun1i-maheshv99.vercel.app/lgText")
     .then((res) => res.json()).then((json) => setlgImg(json));
   }, []);
 

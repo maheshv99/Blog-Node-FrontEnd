@@ -9,17 +9,17 @@ const Technology = () => {
   const [TopPost, setTopPost] = useState("");
 
   useEffect(() => {
-    fetch("https://blog-node-backend-g41v.vercel.app/technologyPost")
+    fetch("https://blog-node-backend-7wochun1i-maheshv99.vercel.app/technologyPost")
       .then((res) => res.json()).then((json) => setPost(json));
   }, []);
 
   useEffect(() => {
-    fetch("https://blog-node-backend-g41v.vercel.app/technologyFirstPost")
+    fetch("https://blog-node-backend-7wochun1i-maheshv99.vercel.app/technologyFirstPost")
       .then((res) => res.json()).then((json) => setFirstPost(json));
   }, []);
 
   useEffect(() => {
-    fetch("https://blog-node-backend-g41v.vercel.app/technologyTopPost")
+    fetch("https://blog-node-backend-7wochun1i-maheshv99.vercel.app/technologyTopPost")
       .then((res) => res.json()).then((json) => setTopPost(json));
   }, []);
   return (

@@ -9,17 +9,17 @@ export default function Hollywood() {
   const [TopPost, setTopPost] = useState("");
 
   useEffect(() => {
-    fetch("https://blog-node-backend-g41v.vercel.app/hollywoodPost")
+    fetch("https://blog-node-backend-7wochun1i-maheshv99.vercel.app/hollywoodPost")
       .then((res) => res.json()).then((json) => setPost(json));
   }, []);
 
   useEffect(() => {
-    fetch("https://blog-node-backend-g41v.vercel.app/hollywoodFirstPost")
+    fetch("https://blog-node-backend-7wochun1i-maheshv99.vercel.app/hollywoodFirstPost")
       .then((res) => res.json()).then((json) => setFirstPost(json));
   }, []);
 
   useEffect(() => {
-    fetch("https://blog-node-backend-g41v.vercel.app/hollywoodTopPost")
+    fetch("https://blog-node-backend-7wochun1i-maheshv99.vercel.app/hollywoodTopPost")
       .then((res) => res.json()).then((json) => setTopPost(json));
   }, []);
 
